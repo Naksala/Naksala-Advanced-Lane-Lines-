@@ -174,7 +174,7 @@ class LaneLines:
             msg = "Left Curve is infront" #need to voice
         if direction == 'R':
             y, x = self.right_curve_img[:,:,3].nonzero()
-            out_img[y, x-100+W//2] = self.right_curve_img[y, x, :3]
+            #out_img[y, x-100+W//2] = self.right_curve_img[y, x, :3]
             msg = "Right Curve is infront" #need to voice
         if direction == 'F':
             y, x = self.keep_straight_img[:,:,3].nonzero()
